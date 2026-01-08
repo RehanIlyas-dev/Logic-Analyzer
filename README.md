@@ -1,4 +1,4 @@
-# Propositional Logic Expression Analyzer 🧮
+# Propositional Logic Analyzer 🧮
 
 > **CS-101 Discrete Mathematics Project**
 > **University of Engineering and Technology, Lahore**
