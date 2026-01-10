@@ -531,16 +531,25 @@ int evaluatePostfix(char postfix[], char vars[], int varCount, int tableRow[])
                     int result = 0;
 
                     if (c == '&')
+                    {
                         result = operand1 & operand2;
+                    }
                     else if (c == '|')
+                    {
                         result = operand1 | operand2;
+                    }
                     else if (c == '^')
+                    {
                         result = operand1 ^ operand2;
+                    }
                     else if (c == '>')
+                    {
                         result = (!operand1) | operand2; // P -> Q = ~P | Q
+                    }
                     else if (c == '=')
+                    {
                         result = (operand1 == operand2); // P <-> Q
-
+                    }
                     stack[top] = result;
                     top++;
                 }
